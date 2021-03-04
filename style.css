@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* :not(body) {
+    /* border: 1px solid black;  */
+}
+
+.body-wrapper {
+    margin: auto;
+    width: 1024px;
+}
+
+.wrapper {
+    margin: auto;
+    margin: 0 50px;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(244, 249, 253);
+}
+
+/* NAV */
+
+nav {
+    padding: 10px 0;
+}
+
+header .col {
+    display: inline-block;
+    width: calc(50% - 2px)
+}
+
+header nav > .col.lft * {
+    color:rgb(61, 83, 100)
+}
+
+header .col.lft > select {
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+header nav > .col.lft > span {
+    border-left: 1px solid rgb(61, 83, 100);
+    padding-left: 10px;
+}
+
+header .co.lft > select > option {
+    border: none;
+}
+
+header .col.rght {
+    text-align: right;
+}
+
+header nav .col.rght * {
+    margin: 0 5px;
+}
+
+header nav > .col.rght > input {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+header .col.rght > input:nth-child(2) {
+    border: 1px solid rgb(254, 119, 90);
+    color: rgb(254, 119, 90);
+    background-color: transparent;
+}
+
+header .col.rght > input:nth-child(3){
+    background-color: rgb(254, 119, 90);
+    color:rgb(244, 249, 253)
+}
+
+/* HEADER SECTION */
+
+header section {
+    background-color: white;
+}
+
+header section > .col.rght > ul {
+    list-style-type: none;
+}
+
+header section > .col.rght > ul > li {
+    display: inline-block;
+    color:rgb(61, 83, 100)
+
+}
+
+header section > .col.rght > ul a {
+    text-decoration: none;
+    color:rgb(61, 83, 100)
+
+}
