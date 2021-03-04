@@ -81,22 +81,39 @@ header .col.rght > input:nth-child(3){
 
 /* HEADER SECTION */
 
-header section {
+section {
     background-color: white;
+    padding: 15px 0;
+    
 }
 
-header section > .col.rght > ul {
-    list-style-type: none;
-}
-
-header section > .col.rght > ul > li {
+section .col {
     display: inline-block;
-    color:rgb(61, 83, 100)
-
+    width: calc(50% - 2px);
 }
 
-header section > .col.rght > ul a {
+section .col.lft img {
+    vertical-align: middle;
+}
+
+ section .col.rght > ul {
+    list-style-type: none;
+    vertical-align: middle;
+    text-align: right;
+}
+
+ section .col.rght > ul > li {
+    display: inline-block;
+    color:rgb(61, 83, 100);
+    padding-right: 10px;
+}
+
+ section .col.rght > ul a {
     text-decoration: none;
     color:rgb(61, 83, 100)
+}
 
+section .col.rght > ul select {
+    padding-right: 5px;
+    border: none;
 }
