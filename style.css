@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 * :not(body) {
     /* border: 1px solid black;  */
 }
@@ -26,17 +30,17 @@ header {
 
 /* NAV */
 
-nav {
+header nav {
     padding: 10px 0;
 }
 
 header .col {
     display: inline-block;
-    width: calc(50% - 2px)
+    width: calc(50% - 3px)
 }
 
 header nav > .col.lft * {
-    color:rgb(61, 83, 100)
+    color:rgb(51, 71, 91)
 }
 
 header .col.lft > select {
@@ -46,8 +50,9 @@ header .col.lft > select {
 }
 
 header nav > .col.lft > span {
-    border-left: 1px solid rgb(61, 83, 100);
+    border-left: 1px solid rgb(51, 71, 91);
     padding-left: 10px;
+    font-size: 14px;
 }
 
 header .co.lft > select > option {
@@ -87,33 +92,68 @@ section {
     
 }
 
-section .col {
+section nav .col {
     display: inline-block;
-    width: calc(50% - 2px);
+    width: calc(50% - 3px);
 }
 
-section .col.lft img {
+section nav > .col.lft img {
     vertical-align: middle;
 }
 
- section .col.rght > ul {
+ section nav >.col.rght > ul {
     list-style-type: none;
     vertical-align: middle;
     text-align: right;
 }
 
- section .col.rght > ul > li {
+ section nav > .col.rght > ul > li {
     display: inline-block;
-    color:rgb(61, 83, 100);
+    color:rgb(51, 71, 91);
     padding-right: 10px;
+    font-size: 14px;
+
 }
 
- section .col.rght > ul a {
+ section nav > .col.rght > ul a {
     text-decoration: none;
-    color:rgb(61, 83, 100)
+    color:rgb(51, 71, 91)
 }
 
-section .col.rght > ul select {
+section nav > .col.rght > ul select {
     padding-right: 5px;
     border: none;
+}
+
+/* MAIN */
+
+main > article.jumbotron > #jumbo-bg {
+    background-image: url(img/jumbotron.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main > article.jumbotron .col {
+    width: 45%;
+    color: rgb(51, 71, 91);
+    padding-top: 40px;
+    padding-bottom: 160px;
+}
+
+main > article.jumbotron .col > h1{
+    font-size: 40px;
+}
+
+main > article.jumbotron .col > p {
+    padding: 25px 0;
+    font-size: 12px
+}
+
+main > article.jumbotron .col > input {
+    background-color: rgb(254, 119, 90);
+    color:rgb(244, 249, 253);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
 }
