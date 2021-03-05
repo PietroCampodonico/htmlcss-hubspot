@@ -9,26 +9,34 @@ color: rgb(51, 71, 91)
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* 
 .body-wrapper {
     margin: auto;
     width: 1024px;
-}
+} */
+ /*WRAPPERS UTILITY CLASSES  */
 
 .wrapper {
+    /* margin: auto;
+    margin: 0 80px; */
+    width: 1024px;
     margin: auto;
-    margin: 0 80px;
 }
 
-.wrapper-center {
-    width: 60%;
+.img-container {
     margin: auto;
+}
+
+.box {
+    text-align: center;
 }
 
 /* HEADER */
 
 header {
     background-color: rgb(244, 249, 253);
+    border-bottom: 2px solid rgb(51, 71, 91);
+
 }
 
 /* NAV */
@@ -103,20 +111,20 @@ section nav > .col.lft img {
     vertical-align: middle;
 }
 
- section nav >.col.rght > ul {
+section nav >.col.rght > ul {
     list-style-type: none;
     vertical-align: middle;
     text-align: right;
 }
 
- section nav > .col.rght > ul > li {
+section nav > .col.rght > ul > li {
     display: inline-block;
     padding-right: 10px;
     font-size: 14px;
-
+    
 }
 
- section nav > .col.rght > ul a {
+section nav > .col.rght > ul a {
     text-decoration: none;
 }
 
@@ -127,7 +135,14 @@ section nav > .col.rght > ul select {
 
 /* MAIN */
 /* Article */
-article input {
+
+main > article p {
+    padding: 35px 0;
+    font-size: 15px;
+    
+
+}
+article a {
     background-color: rgb(254, 119, 90);
     color:white;
     border: none;
@@ -135,29 +150,44 @@ article input {
     border-radius: 5px;
 }
 
+article.services > .features .img-container {
+    width: 120px;
+    height: 120px;
+}
+
+article.services > .features .img-container > img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    object-position: center;
+}    
+
 /* Jumbo */
 
-article.jumbotron > #jumbo-bg {
+article.jumbotron {
+    /* padding-top: 100px;
+    padding-bottom: 280px; */
     background-image: url(img/jumbotron.png);
     background-size: cover;
+    /* background-size: contaim; */
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-article.jumbotron .col {
+article.jumbotron .col.lft {
     width: 50%;
-    padding-top: 40px;
-    padding-bottom: 160px;
+    /* padding-top: 150px;
+    padding-bottom: 400px; */
 }
 
 article.jumbotron .col > h1{
     font-size: 40px;
 }
 
-article.jumbotron .col > p {
+/* article.jumbotron .col > p {
     padding: 25px 0;
     font-size: 12px
-}
+} */
 
 /* Services */
 /* Top Row */
@@ -166,15 +196,16 @@ article.services {
     background-color: rgb(244, 249, 253);
 }
 
-article.services > .features *:not(input) {
-}
-
-article.services > .features p {
-    font-size: 12px;
-    padding: 25px 0;
-}
+/* article.services > .features p {
+    font-size: 12px; */
+    /* padding: 25px 0; */
+/* } */
 
 article.services > .features .wrapper-center {
+    text-align: center;
+}
+
+.row.top {
     text-align: center;
 }
 
@@ -211,20 +242,8 @@ article.services > .features .row.middle > .col {
 }
 
 article.services > .features .row.middle > .col.lft {
-    width: calc(20% - 120px)
+    width: calc(20% - 60px);
 }
-
-
-article.services > .features .row.middle > .col.lft .img-container {
-    width: 120px;
-    height: 120px;
-}
-
-article.services > .features .row.middle > .col.lft .img-container > img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-}    
 
 article.services > .features .row.middle > .col.rght  {
     width: calc(70% - 120px);
@@ -253,7 +272,7 @@ article.services > .features .row.middle > .col.rght > ul > li {
 
 }
 
-article.services > .features .row.middle > .col.rght > ul > li > span {
+article.services > .features .row > .col > ul > li > span {
     padding: 3px 5px;
     vertical-align: middle;
     border-radius: 50%;
@@ -268,4 +287,25 @@ article.services > .features .row.middle > .col.rght > ul > li > span#first-of-l
 }
 
 /* Bottom Row */
+
+article.services > .features .row.bottom > .col {
+    float: left;
+    text-align: center;
+    width: 33%;
+    background-color: white;
+}
+
+article.services > .features .row.bottom:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article.services > .features .row.bottom > .col > ul {
+    list-style: none;
+}
+
+article.services > .features .row.bottom > .col > ul a {
+    margin-top: 40px;
+}
 
