@@ -333,54 +333,77 @@ article.data {
     background-image: linear-gradient(to top right, rgb(0, 168, 185), rgb(0, 185, 168));
 }
 
-article.data * {
+article.data section * {
     color: white;
 }
 
-article.data section.achievements {
+article.data section {
     padding: 40px 0;
     text-align: center;
 }
 
-article.data section.achievements:after {
+article.data section:after {
     content: "";
     display: table;
     clear: both;
 }
 
-article.data section.achievements .box {
+article.data section .box {
     width: 25%;
     float:left
 }
 
-article.data section.achievements .box.row.top {
+article.data section .box.row.top {
     border-bottom: 1px solid rgb(172, 228, 231)
 }
 
-article.data section.achievements .box.row.first,
-article.data section.achievements .box.row.third {
+article.data section .box.row.first,
+article.data section .box.row.third {
     border-right: 1px solid rgb(172, 228, 231);
 }
 
-article.data section.achievements .box.row.second {
+article.data section .box.row.second {
     border-right: 1px solid white;
 }
 
 
-article.data section.achievements .box.row > * {
+article.data section .box.row > * {
     margin: 10px 0;
 }
 
-article.data section.achievements .box.row h1 {
+article.data section .box.row h1 {
     font-size: 30px;
 }
 
-article.data section.achievements .box.row > p {
+article.data section .box.row > p {
     padding: 0;
 }
-article.data section.achievements .box.row img {
+article.data section .box.row img {
     width: 115px;
     height: 35px;
     object-fit: contain;
     object-position: center;
+}
+
+/* References */
+
+article.references .row.top > .box {
+    display: inline-block;
+}
+
+article.references .row.top .img-container {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+article.references .row.top .box.customers {
+    width: 50%;
+}
+
+
+
+article.references .row.top .img-container > img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
 }
