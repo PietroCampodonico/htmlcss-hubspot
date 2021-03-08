@@ -23,7 +23,7 @@ p {
 }
 
 
- /*WRAPPERS UTILITY CLASSES  */
+ /* UTILITY CLASSES  */
 
 .wrapper {
     width: 1024px;
@@ -42,41 +42,51 @@ p {
     text-align: center;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button {
+    background-color: rgb(254, 119, 90);
+    color:white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.down-arrow {
+    /* padding-left: 5px; */
+}
+
 /* HEADER */
 
 header {
     background-color: rgb(244, 249, 253);
     border-bottom: 2px solid rgb(51, 71, 91);
+    font-size: 14px;
 }
 
-/* NAV */
+/*header NAV */
 
-header nav {
-    padding: 10px 0;
+header nav > * {
+    padding: 20px 0;
 }
 
 header .col {
     display: inline-block;
-    width: calc(50% - 3px)
-}
-
-header nav > .col.lft * {
-    color:rgb(51, 71, 91)
-}
-
-header .col.lft > select {
-    margin-right: 10px;
-    border: none;
-    background-color: transparent;
+    width: calc(50% - 2px)
 }
 
 header nav > .col.lft > span {
-    padding-left: 10px;
-    font-size: 14px;
+    padding-right: 10px;
 }
 
-header .co.lft > select > option {
-    border: none;
+header nav > .col.lft > a[target="contact"] {
+    border-left: 1px solid rgb(51, 71, 91);
+    padding-left: 10px;
 }
 
 header .col.rght {
@@ -87,21 +97,15 @@ header nav .col.rght * {
     margin: 0 5px;
 }
 
-header nav > .col.rght > input {
-    border: none;
+header nav > .col.rght > .button {
     padding: 10px 10px;
-    border-radius: 5px;
 }
 
-header .col.rght > input:nth-child(2) {
+header .col.rght > .button:nth-child(2) {
     border: 1px solid rgb(254, 119, 90);
     color: rgb(254, 119, 90);
+    padding: 9px 10px;
     background-color: transparent;
-}
-
-header .col.rght > input:nth-child(3){
-    background-color: rgb(254, 119, 90);
-    color:white;
 }
 
 /* SECTION NAV */
@@ -109,7 +113,6 @@ header .col.rght > input:nth-child(3){
 section nav{
     background-color: white;
     padding: 15px 0;
-
 }
 
 section nav .col {
