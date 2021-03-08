@@ -191,7 +191,7 @@ article.services > .features .row.top {
 
 article.services > .features .row.top > img {
     height: 200px;
-    width: 200px;
+    width: auto;
 }
 
 article.services > .features .row.top > p {
