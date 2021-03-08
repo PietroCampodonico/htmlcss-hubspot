@@ -35,14 +35,6 @@ img {
     margin: auto;
 }
 
-.wrapper.smaller {
-    padding: 0 100px;
-}
-
-.img-container {
-    margin: auto;
-}
-
 .box {
     text-align: center;
 }
@@ -59,7 +51,6 @@ img {
     border: none;
     padding: 15px 20px;
     border-radius: 5px;
-    /* margin-bottom: 40px; */
 }
 
 /* HEADER */
@@ -339,6 +330,8 @@ article.data section .box.row > img {
 
 /* References */
 
+/* row top */
+
 article.references .row.top {
    margin-top: 35px;
 }
@@ -368,6 +361,8 @@ article.references .row.top img {
     width: 100px;
     height: 50px;
 }
+
+/* row bottom */
 
 article.references .row.bottom > .box.lft {
     width: 35%;
@@ -428,6 +423,8 @@ footer .row.top > .col > img {
     margin-top: 30px;
 }
 
+/* middle row */
+
 footer .row.middle {
     text-align: center;
     margin-top: 60px;
@@ -439,6 +436,8 @@ footer .row.middle > a {
     padding-left: 15px;
     padding-bottom: 10px;
 }
+
+/* bottom row */
 
 footer .row.bottom {
     padding-top: 30px;
