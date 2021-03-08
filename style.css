@@ -354,12 +354,7 @@ article.references .row.top > .box.lft {
 }
 
 article.references .row.top > .box.lft h1 {
-    font-size: 30px;
-}
-
-article.references .row.top .img-container {
-    display: inline-block;
-    padding: 0 5px;
+    font-size: 40px;
 }
 
 article.references .row.top .box.rght,
@@ -367,10 +362,11 @@ article.references .row.bottom .box.rght {
     width: 50%;
 }
 
-article.references .row.top .img-container > img {
+article.references .row.top img {
+    display: inline-block;
+    padding: 0 5px;
     width: 100px;
     height: 50px;
-    object-fit: contain;
 }
 
 article.references .row.bottom > .box.lft {
@@ -380,10 +376,9 @@ article.references .row.bottom > .box.lft {
 
 }
 
-article.references .row.bottom .img-container > img {
+article.references .row.bottom img {
     width: 100%;
     height: 300px;
-    object-fit: contain;
     object-position: right;
 }
 
@@ -410,7 +405,6 @@ footer p {
 footer .row.top > .col{
     width: 25%;
     float: left;
-
 }
 
 footer .row.top::after {
@@ -419,22 +413,18 @@ footer .row.top::after {
     clear: both;
 }
 
-footer .row.top > .col > ul {
-    padding-bottom: 15px;
-}
-
+footer .row.top > .col > ul,
 footer .row.top > .col > ul > li {
     padding-bottom: 15px;
 }
 
-footer .row.top > .col a {
+footer .row.top > .col > a {
     padding: 10px 15px;
-    border-radius: 5px;;
     background-color: lightgrey;
     color: rgb(51, 71, 91)
 }
 
-footer .row.top > .col > .img-container > img {
+footer .row.top > .col > img {
     margin-top: 30px;
 }
 
@@ -445,14 +435,13 @@ footer .row.middle {
     padding-bottom: 10px;
 }
 
-footer .row.middle > span {
+footer .row.middle > a {
     padding-left: 15px;
     padding-bottom: 10px;
 }
 
 footer .row.bottom {
     padding-top: 30px;
-
 }
 
 footer .row.bottom > .col{
