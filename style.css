@@ -112,12 +112,12 @@ header .col.rght > .button:nth-child(2) {
 
 section nav{
     background-color: white;
-    padding: 15px 0;
 }
 
 section nav .col {
+    padding: 15px 0;
     display: inline-block;
-    width: calc(50% - 3px);
+    width: calc(50% - 2px);
 }
 
 section nav > .col.lft img {
@@ -125,7 +125,6 @@ section nav > .col.lft img {
 }
 
 section nav >.col.rght > ul {
-    list-style-type: none;
     vertical-align: middle;
     text-align: right;
 }
@@ -134,16 +133,10 @@ section nav > .col.rght > ul > li {
     display: inline-block;
     padding-right: 10px;
     font-size: 14px;
-
 }
 
-section nav > .col.rght > ul a {
-    text-decoration: none;
-}
-
-section nav > .col.rght > ul select {
-    padding-right: 5px;
-    border: none;
+section nav > .col.rght > ul span {
+    padding-left: 5px;
 }
 
 /* MAIN */
