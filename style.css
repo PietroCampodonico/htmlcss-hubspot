@@ -39,7 +39,7 @@ img {
     text-align: center;
 }
 
-.clearfix {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
@@ -182,7 +182,7 @@ article.services > .features .row.top {
 
 article.services > .features .row.top > img {
     height: 200px;
-    width: auto;
+    width: 200px;
 }
 
 article.services > .features .row.top > p {
@@ -368,7 +368,6 @@ article.references .row.bottom > .box.lft {
     width: 35%;
     text-align: left;
     margin-right: 120px;
-
 }
 
 article.references .row.bottom img {
@@ -400,12 +399,6 @@ footer p {
 footer .row.top > .col{
     width: 25%;
     float: left;
-}
-
-footer .row.top::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 footer .row.top > .col > ul,
