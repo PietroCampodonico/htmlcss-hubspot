@@ -1,3 +1,40 @@
+/*  Tabel of Contents
+
+1. Global Styles
+
+2. Utility classes
+
+3. Header
+    3.1 Head. NAV
+
+4. Section NAV
+
+5. Main
+    5.1 jumbotron
+
+    5.2 Green bar
+
+    5.3 Services
+        5.3.1 Serv. Top Row
+        5.3.2 Serv. Middle Row
+        5.3.3 Serv. Bottom Row
+
+    5.4 Data
+
+    5.5 References
+        5.5.1 Ref. Top Row
+        5.5.2 Ref. Bottom Row
+    
+6. Footer
+    6.1 Foot. Top Row
+    6.2 Foot. Middle Row
+    6.3 Foot. Bottom Row 
+*/
+
+/* ==================
+   1. GLOBAL STYLES
+==================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +65,9 @@ img {
     object-position: center;
 }
 
- /* UTILITY CLASSES  */
+ /*=================
+  2. UTILITY CLASSES
+====================*/
 
 .wrapper {
     width: 1024px;
@@ -53,7 +92,9 @@ img {
     border-radius: 5px;
 }
 
-/* HEADER */
+/* ============
+  3.  HEADER
+============= */
 
 header {
     background-color: rgb(244, 249, 253);
@@ -61,7 +102,7 @@ header {
     font-size: 14px;
 }
 
-/*header NAV */
+/* 3.1 Head. NAV */
 
 header nav > * {
     padding: 20px 0;
@@ -76,7 +117,7 @@ header nav > .col.lft > span {
     padding-right: 10px;
 }
 
-header nav > .col.lft > a[target="contact"] {
+header nav > .col.lft > a[value="contact"] {
     border-left: 1px solid rgb(51, 71, 91);
     padding-left: 10px;
 }
@@ -100,9 +141,11 @@ header .col.rght > .button:nth-child(2) {
     background-color: transparent;
 }
 
-/* SECTION NAV */
+/* =============
+ 4. SECTION NAV 
+==============*/
 
-section nav{
+section nav {
     background-color: white;
 }
 
@@ -121,19 +164,22 @@ section nav >.col.rght > ul {
     text-align: right;
 }
 
-section nav > .col.rght > ul > li {
+section nav > .col.rght li {
     display: inline-block;
     padding-right: 10px;
     font-size: 14px;
 }
 
-section nav > .col.rght > ul span {
+section nav > .col.rght span {
     padding-left: 5px;
 }
 
-/* MAIN */
-/* Article */
-/* Jumbo */
+/* =========
+  5. MAIN
+========== */
+
+
+/* 5.1 Jumbotron */
 
 article.jumbotron {
     background-image: url(img/jumbotron.png);
@@ -152,7 +198,7 @@ article.jumbotron .col > h1{
     font-size: 40px;
 }
 
-/* Green Bar */
+/* 5.2 Green Bar */
 
 main > section.green-bar {
     padding: 35px 0;
@@ -161,7 +207,9 @@ main > section.green-bar {
     border-bottom: 3px solid rgb(51, 71, 91);
 }
 
-/* Services */
+/* ===========
+  5.3  Services
+=============*/
 
 article.services {
     padding: 35px 0;
@@ -173,7 +221,7 @@ article.services > .features img {
     height: 120px;
 }
 
-/* Top Row */
+/* 5.3.1 Serv. Top Row */
 
 article.services > .features .row.top {
     text-align: center;
@@ -190,57 +238,57 @@ article.services > .features .row.top > p {
     padding-right: 155px;
 }
 
-/* Middle Row */
+/* 5.3.2 Serv. Middle Row */
 
-article.services > .features .row.middle{
+article.services .row.middle{
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 5px;
     margin-bottom: 30px;
 }
 
-article.services > .features .row.middle > .col {
+article.services .row.middle > .col {
     float: left;
     margin: 50px 60px;
 }
 
-article.services > .features .row.middle > .col.lft {
+article.services .row.middle > .col.lft {
     width: calc(20% - 60px);
 }
 
-article.services > .features .row.middle > .col.lft img {
+article.services .row.middle > .col.lft img {
     margin-bottom: 20px;
 }
 
-article.services > .features .row.middle > .col.rght  {
+article.services .row.middle > .col.rght  {
     width: calc(70% - 120px);
 }
 
-article.services > .features .row.middle > .col.rght > h4 {
+article.services .row.middle > .col.rght > h4 {
     display: inline-block;
     padding-right: 40px;
     vertical-align: middle;
 }
 
-article.services > .features .row.middle > .col.rght > .line {
+article.services .row.middle > .col.rght > .line {
     display: inline-block;
     width: 280px;
     border-top: 1px solid rgb(51, 71, 91);
     vertical-align: middle;
 }
 
-article.services > .features .row.middle > .col.rght > ul {
+article.services .row.middle > .col.rght > ul {
     padding-top: 25px;
 }
 
-article.services > .features .row.middle > .col.rght > ul > li {
+article.services .row.middle > .col.rght > ul > li {
     display: inline-block;
     vertical-align: middle;
     line-height: 17px;
     padding-right: 20px;
 }
 
-article.services > .features .row > .col > ul > li > span {
+article.services .row > .col > ul > li > span {
     padding: 3px 5px;
     vertical-align: middle;
     border-radius: 50%;
@@ -251,9 +299,9 @@ article.services > .features .row > .col > ul > li > span {
     margin-right: 15px;
 }
 
-/* Bottom Row */
+/* 5.3.3 Serv. Bottom Row */
 
-article.services > .features .row.bottom > .col {
+article.services .row.bottom > .col {
     float: left;
     text-align: center;
     width: calc(100% / 3 - 20px);
@@ -263,22 +311,24 @@ article.services > .features .row.bottom > .col {
     border-radius: 5px;
 }
 
-article.services > .features .row.bottom > .col.middle {
+article.services .row.bottom > .col.middle {
     margin: 0 30px;
 }
 
-article.services > .features .row.bottom > .col > .box {
+article.services .row.bottom > .col > .box {
     border-bottom: 1px solid rgb(51, 71, 91);
     margin-bottom: 35px;
 }
 
-article.services > .features .row.bottom > .col > ul {
+article.services .row.bottom > .col > ul {
     padding-bottom: 55px;
     padding-top: 30px;
     text-align: left;
 }
 
-/* Data */
+/*==========
+  5.4 Data
+ ========== */
 
 article.data {
     background-image: linear-gradient(to top right, rgb(0, 168, 185), rgb(0, 185, 168));
@@ -328,9 +378,11 @@ article.data section .box.row > img {
     height: 35px;
 }
 
-/* References */
+/*==============
+ 5.5 References
+=============== */
 
-/* row top */
+/* 5.5.1 Ref. Top Row */
 
 article.references .row.top {
    margin-top: 35px;
@@ -362,7 +414,7 @@ article.references .row.top img {
     height: 50px;
 }
 
-/* row bottom */
+/* 5.5.2  Ref. Bottom Row */
 
 article.references .row.bottom > .box.lft {
     width: 35%;
@@ -376,9 +428,9 @@ article.references .row.bottom img {
     object-position: right;
 }
 
-/* FOOTER */
-
-/* top row */
+/*===========
+  6. FOOTER
+=============*/
 
 footer {
     background-color: rgb(50, 73, 91);
@@ -387,14 +439,14 @@ footer {
 
 footer * {
     color: rgb(196, 207, 219)
-
 }
 
 footer p {
     font-weight: bold;
     color: white;
-
 }
+
+/* 6.1 Foot. Top Row */
 
 footer .row.top > .col{
     width: 25%;
@@ -402,7 +454,7 @@ footer .row.top > .col{
 }
 
 footer .row.top > .col > ul,
-footer .row.top > .col > ul > li {
+footer .row.top > .col li {
     padding-bottom: 15px;
 }
 
@@ -416,7 +468,7 @@ footer .row.top > .col > img {
     margin-top: 30px;
 }
 
-/* middle row */
+/* 6.2 Foot. Middle Row */
 
 footer .row.middle {
     text-align: center;
@@ -430,7 +482,7 @@ footer .row.middle > a {
     padding-bottom: 10px;
 }
 
-/* bottom row */
+/* 6.3 Foot. Bottom Row */
 
 footer .row.bottom {
     padding-top: 30px;
